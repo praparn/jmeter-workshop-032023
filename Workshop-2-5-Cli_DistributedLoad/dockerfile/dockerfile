@@ -1,17 +1,17 @@
 FROM alpine:3.14.0
 LABEL maintainer=”eva10409@gmail.com
-ARG JMETER_VERSION="5.4.1"
+ARG JMETER_VERSION="5.5"
 ENV JMETER_HOME /opt/apache-jmeter-${JMETER_VERSION}
 ENV JMETER_BIN  ${JMETER_HOME}/bin
 ENV MIRROR_HOST https://downloads.apache.org/jmeter
 ENV JMETER_DOWNLOAD_URL ${MIRROR_HOST}/binaries/apache-jmeter-${JMETER_VERSION}.tgz
-ENV JMETER_PLUGINS_DOWNLOAD_URL https://raw.githubusercontent.com/praparn/jmeter-workshop-072021/master/Workshop-2-4-Plugin
+ENV JMETER_PLUGINS_DOWNLOAD_URL https://raw.githubusercontent.com/praparn/jmeter-workshop-032023/master/Workshop-2-4-Plugin
 ENV JMETER_PLUGINS_FOLDER ${JMETER_HOME}/lib/ext/
 RUN    apk update \
 	&& apk upgrade \
 	&& apk add ca-certificates \
 	&& update-ca-certificates \
-            && apk add --update openjdk8-jre tzdata curl unzip bash \
+            && apk add --update default-jdk tzdata curl unzip bash \
             && cp /usr/share/zoneinfo/Europe/Rome /etc/localtime \
             && echo "Asia/Bangkok" >  /etc/timezone \
 	&& rm -rf /var/cache/apk/* \

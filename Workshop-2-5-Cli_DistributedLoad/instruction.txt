@@ -27,7 +27,7 @@ Part 1: Open and Configure Test Plan
 
 5. (Load Test Machine) Run load test in command line mode by command (Record total sample and Time to run)
     cd ~
-    ./apache-jmeter-5.4.1/bin/jmeter -n -t ~/jmeter-workshop-032023/Workshop-2-5-Cli_DistributedLoad/jmeter/Template_Workshop_2_5_FirstPage.jmx -l ~/jmeter-workshop-092021/Workshop-2-5-Cli_DistributedLoad/jmeter/result_2_5.jtl
+    ./apache-jmeter-5.5/bin/jmeter -n -t ~/jmeter-workshop-032023/Workshop-2-5-Cli_DistributedLoad/jmeter/Template_Workshop_2_5_FirstPage.jmx -l ~/jmeter-workshop-032023/Workshop-2-5-Cli_DistributedLoad/jmeter/result_2_5.jtl
 
 
 6. (Load Test Machine) Open JMEter GUI/"~/jmeter-workshop-032023/Workshop-2-5-Cli_DistributedLoad/jmeter/Template_Workshop_2_5_FirstPage.jmx"

@@ -54,7 +54,7 @@ Part 2: Build Image of Docker for JMeter
     --subnet=192.168.100.0/24 --gateway=192.168.100.5 --opt="com.docker.network.mtu"="1500" jmeternet
 
 5. (Load Test Machine) Run 3 jmeter server and 1 jmeter client for generate load by command:
-    cd ~/jmeter-workshop-092021/Workshop-2-5-Cli_DistributedLoad/
+    cd ~/jmeter-workshop-032023/Workshop-2-5-Cli_DistributedLoad/
     chmod +x ./init.sh
     ./init.sh
 

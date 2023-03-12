@@ -39,7 +39,7 @@ Step 1: Install require component for remote (Load Test Machine)
    vncserver -localhost no -geometry 1600x900 :1
 
 6. (Load Test Machine) Download jmeter version 5.5 and install on machine by command:
-   curl https://dlcdn.apache.org//jmeter/binaries/apache-jmeter-5.5.tgz > /home/ubuntu/apache-jmeter-5.5.tgz
+   curl https://dlcdn.apache.org/jmeter/binaries/apache-jmeter-5.5.tgz > /home/ubuntu/apache-jmeter-5.5.tgz
    tar -zxvf /home/ubuntu/apache-jmeter-5.5.tgz && cd apache-jmeter-5.5/bin/
    sed -i -e 's/"${HEAP:="-Xms1g -Xmx1g -XX:MaxMetaspaceSize=256m"}"/"${HEAP:="-Xms2g -Xmx2g -XX:MaxMetaspaceSize=512m"}"/g' /home/ubuntu/apache-jmeter-5.5/bin/jmeter
 

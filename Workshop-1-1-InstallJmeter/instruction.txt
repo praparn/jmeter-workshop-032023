@@ -23,7 +23,7 @@ Step 1: Install require component for remote (Load Test Machine)
 2. (Load Test Machine)Install VNC Server and Desktop:
    sudo su -
    chmod +x /tmp/setupjmeter.sh
-   /tmp/setupjmeter.sh
+   /tmp/setupjmeter.sh ==> Choose "OK" for screen interactive
    reboot
 
 3. (Load Test Machine) After finished and restart machine. Reconnect ssh again and initial vncserver configuration by command:
@@ -50,8 +50,8 @@ Step 1: Install require component for remote (Load Test Machine)
    
 7. (Load Test Machine) Git clone all source code by command:
    cd ~
-   git clone https://github.com/praparn/jmeter-workshop-032023
-   *Remark: Check public ip of Load test by command: "curl http://ifconfig.co"
+   git clone https://github.com/praparn/jmeter-workshop-032023.git
+   *Remark: Check public ip of Load test by command: "curl http://ifconfig.me"
 
 8. (Client) Test open ultravnc client to connect (Setup option or high resolution of picture)
    <public ip address>:1

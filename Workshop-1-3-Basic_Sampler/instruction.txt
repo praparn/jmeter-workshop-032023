@@ -9,8 +9,8 @@ Part 2: Start Performance Test Scenario 1 (Scratch Test)
 ============================================================================================
 0. (Load Test Machine): Clone repository for all test plan as command below:
    cd ~
-   git clone https://github.com/praparn/jmeter-workshop-092021
-   *Remark: Check public ip of Load test by command: "curl http://ifconfig.co"
+   git clone https://github.com/praparn/jmeter-workshop-032023.git
+   *Remark: Check public ip of Load test by command: "curl http://ifconfig.me"
 
 1. (Load Test Machine): Open url of all MEAN.JS in browser: 
     1.1 MEAN: ==> http://<Application Machine>:3000
@@ -21,7 +21,7 @@ Part 2: Start Performance Test Scenario 1 (Scratch Test)
 
 2. (Load Test Machine) Run GUI on JMETER by command: 
     cd ~
-    ./apache-jmeter-5.4.1/bin/jmeter
+    ./apache-jmeter-5.5/bin/jmeter
 
 3. (Load Test Machine) Create Test Plan and configure properties below:
     Name: WorkShop_1_3
@@ -103,7 +103,7 @@ Part 2: Start Performance Test Scenario 1 (Scratch Test)
     7.3 Set Properties:
          Name: MongoDBJSR223Sampler
          [Script language]
-            Language: groovy (Groovy 3.0.7 / Groovy Scription Engine 2.0)
+            Language: groovy (Groovy 3.0.11 / Groovy Scription Engine 2.0)
         
          [Script compilation caching]
     
